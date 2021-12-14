@@ -64,6 +64,100 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-djanggo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/12/14/djanggo/" class="article-date">
+  <time datetime="2021-12-14T08:32:19.567Z" itemprop="datePublished">2021-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/14/djanggo/">django</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="web项目：前端、后端"><a href="#web项目：前端、后端" class="headerlink" title="web项目：前端、后端"></a>web项目：前端、后端</h1><h1 id="前端：html-css-js"><a href="#前端：html-css-js" class="headerlink" title="前端：html css js"></a>前端：html css js</h1><h1 id="后端（后台）：java-python-mybatis-django-数据传递和存储（存储在数据库）"><a href="#后端（后台）：java-python-mybatis-django-数据传递和存储（存储在数据库）" class="headerlink" title="后端（后台）：java/python mybatis,django:数据传递和存储（存储在数据库）"></a>后端（后台）：java/python mybatis,django:数据传递和存储（存储在数据库）</h1><h1 id="安装django-pip-install-django"><a href="#安装django-pip-install-django" class="headerlink" title="安装django:pip install django"></a>安装django:pip install django</h1><h1 id="创建项目：django-admin-startproject-项目名"><a href="#创建项目：django-admin-startproject-项目名" class="headerlink" title="创建项目：django-admin startproject 项目名"></a>创建项目：django-admin startproject 项目名</h1><h1 id="创建应用：先进入manage-py文件的同层文件夹中，命令：python-manage-py-startapp-应用名"><a href="#创建应用：先进入manage-py文件的同层文件夹中，命令：python-manage-py-startapp-应用名" class="headerlink" title="创建应用：先进入manage.py文件的同层文件夹中，命令：python manage.py startapp 应用名"></a>创建应用：先进入manage.py文件的同层文件夹中，命令：python manage.py startapp 应用名</h1><h1 id="运行项目："><a href="#运行项目：" class="headerlink" title="运行项目："></a>运行项目：</h1><pre><code># 1、打开manage.py文件
+# 2、右键运行
+# 3、配置参数：name：项目名称，parameter:runserver （端口号）
+</code></pre>
+<h1 id="配置项目的应用"><a href="#配置项目的应用" class="headerlink" title="配置项目的应用"></a>配置项目的应用</h1><pre><code>#1、在settings.py的INSTALLED_APPS中：注册应用,&quot;demo&quot;  (demo是应用名)
+#2、总路由分发：urls.py :
+            # 导入 from django.urls import include
+            # path(&#39;demo/&#39;,include(&quot;demo.urls&quot;))
+#3、在应用中创建子路由urls.py，
+            # 导入视图类：from . import views
+#4、在应用的views.py中创建视图函数（网页）
+            #导入 from django.http import HttpResponse
+            # 定义视图函数
+                #def index(request):
+                    #return HttpResponse(&quot;视图内容&quot;)
+#5、在子路由urls.py文件中添加视图路由
+            # path(&#39;index&#39;,views.index) index:视图路由，views.index:视图函数
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/14/djanggo/" data-id="ckx5uqbdk000048uceful95o0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-markdown部分语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/12/14/markdown%E9%83%A8%E5%88%86%E8%AF%AD%E6%B3%95/" class="article-date">
+  <time datetime="2021-12-14T08:00:02.471Z" itemprop="datePublished">2021-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/14/markdown%E9%83%A8%E5%88%86%E8%AF%AD%E6%B3%95/">markdown部分语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h2><h4 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h4><h5 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h5><h6 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h6><p>正文直接输入就可以</p>
+<p>换行的话需要在代码中实际空一行</p>
+<p>—python<br>print (<br>    “hello,word”<br>)</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/14/markdown%E9%83%A8%E5%88%86%E8%AF%AD%E6%B3%95/" data-id="ckx5uqbds000148uc66bigz7x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-我的博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/12/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
@@ -74,42 +168,24 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title:我的博客<br>MQ（message queue）分布式系统中的重要组件<br>解决应用解耦，消息异步分发，流量削峰，消息通讯<br>MQ产品：RabbitMQ,RocketMQ,Kafka,ActiveMQ,ZeroMQ<br>特点：消费-生产模式的一个典型代表，MQ和JMS类似，JMS是sun java消息中间件服务的一个标准和APi定义MQ是遵循AMQP协议的具体体现和产品<br>JMS用于提供消息服务的技术规范，MQ是面向消息中间件的最终实现<br>优势：MQ是异步的，往对罗列里发送消息无需等待，不同与通信协议<br>JMS（java messaging service）简介：java消息服务是java平台关面向消息中间件的技术规范，通过提供标准的产生，发送，接收消息的接口简化企业应用开发<br>JMS术语：<br>Producer/Provider:生产者<br>Consumer:消费者<br>Publisher:发布者<br>Subscriber:订阅者<br>moder:消息模型，在客户端之间传递消息的方式<br>PTP：point to point,点对点的消息模型(一个消息只有一个人可以收到)<br>Pub/Sub:发布/订阅的消息模型（一个消息可以有多个消费者）<br>Queue:队列目标<br>Topic:主题目标<br>ConnectionFactory:连接工厂，JMS用他创建连接<br>MQ术语：<br>队列管理器：为我们提供基于队列的消息服务<br>消息：1，消息描述符（消息的优先级，生命周期，消息id）2消息体（非永久性消息，永久性消息）<br>队列：消息的存放地<br>MQ中队列类型：<br>本地队列，远程队列，模板队列，动态队列等<br>通道：channel(d队列管理器之间传递消息的管道，MQ产品的精华)</p>
+        <p>MQ（message queue）分布式系统中的重要组件<br>解决应用解耦，消息异步分发，流量削峰，消息通讯<br>MQ产品：RabbitMQ,RocketMQ,Kafka,ActiveMQ,ZeroMQ<br>特点：消费-生产模式的一个典型代表，MQ和JMS类似，JMS是sun java消息中间件服务的一个标准和APi定义MQ是遵循AMQP协议的具体体现和产品<br>JMS用于提供消息服务的技术规范，MQ是面向消息中间件的最终实现<br>优势：MQ是异步的，往对罗列里发送消息无需等待，不同与通信协议<br>JMS（java messaging service）简介：java消息服务是java平台关面向消息中间件的技术规范，通过提供标准的产生，发送，接收消息的接口简化企业应用开发<br>JMS术语：<br>Producer/Provider:生产者<br>Consumer:消费者<br>Publisher:发布者<br>Subscriber:订阅者<br>moder:消息模型，在客户端之间传递消息的方式<br>PTP：point to point,点对点的消息模型(一个消息只有一个人可以收到)<br>Pub/Sub:发布/订阅的消息模型（一个消息可以有多个消费者）<br>Queue:队列目标<br>Topic:主题目标<br>ConnectionFactory:连接工厂，JMS用他创建连接<br>MQ术语：<br>队列管理器：为我们提供基于队列的消息服务<br>消息：1，消息描述符（消息的优先级，生命周期，消息id）2消息体（非永久性消息，永久性消息）<br>队列：消息的存放地<br>MQ中队列类型：<br>本地队列，远程队列，模板队列，动态队列等<br>通道：channel(d队列管理器之间传递消息的管道，MQ产品的精华)</p>
 
       
     </div>
     <footer class="article-footer">
       <a data-url="http://example.com/2021/12/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="ckx5jz9560002woucc8fy9reh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-bb" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/12/07/bb/" class="article-date">
-  <time datetime="2021-12-07T08:18:03.381Z" itemprop="datePublished">2021-12-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>title:我的博客<br>MQ（message queue）分布式系统中的重要组件<br>解决应用解耦，消息异步分发，流量削峰，消息通讯<br>MQ产品：RabbitMQ,RocketMQ,Kafka,ActiveMQ,ZeroMQ<br>特点：消费-生产模式的一个典型代表，MQ和JMS类似，JMS是sun java消息中间件服务的一个标准和APi定义MQ是遵循AMQP协议的具体体现和产品<br>JMS用于提供消息服务的技术规范，MQ是面向消息中间件的最终实现<br>优势：MQ是异步的，往对罗列里发送消息无需等待，不同与通信协议<br>JMS（java messaging service）简介：java消息服务是java平台关面向消息中间件的技术规范，通过提供标准的产生，发送，接收消息的接口简化企业应用开发<br>JMS术语：<br>Producer/Provider:生产者<br>Consumer:消费者<br>Publisher:发布者<br>Subscriber:订阅者<br>moder:消息模型，在客户端之间传递消息的方式<br>PTP：point to point,点对点的消息模型(一个消息只有一个人可以收到)<br>Pub/Sub:发布/订阅的消息模型（一个消息可以有多个消费者）<br>Queue:队列目标<br>Topic:主题目标<br>ConnectionFactory:连接工厂，JMS用他创建连接<br>MQ术语：<br>队列管理器：为我们提供基于队列的消息服务<br>消息：1，消息描述符（消息的优先级，生命周期，消息id）2消息体（非永久性消息，永久性消息）<br>队列：消息的存放地<br>MQ中队列类型：<br>本地队列，远程队列，模板队列，动态队列等<br>通道：channel(d队列管理器之间传递消息的管道，MQ产品的精华)</p>
-<p>RabbitMQ：主要用于组件间的解耦，属于pivotal公司<br>    企业级消息队列，集群易扩展</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/07/bb/" data-id="ckx5jz94u0000wouc4dl0fqkm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -199,11 +275,15 @@
       <ul>
         
           <li>
-            <a href="/2021/12/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">(no title)</a>
+            <a href="/2021/12/14/djanggo/">django</a>
           </li>
         
           <li>
-            <a href="/2021/12/07/bb/">(no title)</a>
+            <a href="/2021/12/14/markdown%E9%83%A8%E5%88%86%E8%AF%AD%E6%B3%95/">markdown部分语法</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
           </li>
         
           <li>
